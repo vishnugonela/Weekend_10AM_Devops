@@ -1,3 +1,3 @@
 #!/bin/bash
 
-echo "Hello World from GIT"
+echo "Hello World from GITHUB by Vishnu"
