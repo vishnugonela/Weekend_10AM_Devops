@@ -11,6 +11,7 @@ pipeline {
         stage('test'){
             steps{
                 sh '''
+		    bash ${WORKSPACE}/linux/script.sh
                     echo "Test stage is completed"
                 '''
             }
