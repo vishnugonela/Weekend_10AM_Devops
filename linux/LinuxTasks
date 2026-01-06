@@ -1,0 +1,31 @@
+Task 1 : find the file ends with .java
+     Ans) find -type f "*.java"
+          Explanation : -type f --> taking only for files(Not folders)
+                        *--> any character
+                         ".java" --> search the file having ending .java
+
+
+Task 2 : find the file size having more than 5 MB
+       Ans) find -type f -size +5M 
+            Explanation : +5MB --> search the file size containing more than 5MB
+            
+            find /home/sravani/Documents/sravani -type f -size +0M
+            Explanation : want to search by giving path of the file
+                   ls -l srav.g --> want to know exact fileame or use stat keyword
+
+Task 3 ; find the file older than 10 days ago
+       Ans) find -type f -mtime +10
+        Explanation : mtime --> modified time 
+        
+                     delete files older than 10 days
+                     find -type f -mtime +10 -delete  
+
+Task 4 : find under /var files starts with sys.
+       Ans) find /var -type f -name "sys*"
+
+Task 5 : what is a cmnd to search a string in file :
+       Ques) find a string string starts with T and with k
+       Ans) grep -E srav.java "\bT.*k\b"
+           srav.java--> filename
+           \b -->word boundary
+           grep --> to search
