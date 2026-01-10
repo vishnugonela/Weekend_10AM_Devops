@@ -34,4 +34,8 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
-
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+     - name: single deploy
+       run: echo "Deloyment successful"
